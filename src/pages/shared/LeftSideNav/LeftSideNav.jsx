@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const LeftSideNav = () => {
   const [categories, setCategories] = useState([]);
-  console.log(categories);
+
   useEffect(() => {
     fetch("categories.json")
       .then((res) => res.json())
